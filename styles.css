@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: #FFFFFF;
+    color: #000;
+}
+
+header{
+
+    padding: 0px 50px;
+
+    background-color: #000;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav,ul, a, li, p{
+    background-color: #000;
+    color: #FFFFFF;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+a:hover{
+    color: #BF7F00;
+}
+
+img{
+    height: 240px;
+}
