@@ -7,13 +7,18 @@
     font-weight: 400;
     font-style: normal;
 
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     color: #000;
 }
 
-header{
+ul, il, a{
+    text-decoration: none;
+    list-style: none;
+}
 
+header{
     padding: 0px 50px;
+    margin-bottom: 1%;
 
     background-color: #000;
     color: #FFFFFF;
@@ -23,11 +28,37 @@ header{
     align-items: center;
 }
 
-nav,ul, a, li, p{
+header nav, header ul, header il, header a{
     background-color: #000;
     color: #FFFFFF;
-    list-style: none;
-    text-decoration: none;
+}
+
+header a:hover{
+    color: #BF7F00;
+}
+
+.pratoApresentacao{
+    margin-left: 1%;
+    margin-bottom: 2%;
+
+    color: #000;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+
+    width: 30%;
+}
+
+.pratoApresentacao img, .pratoApresentacao a{
+    color: #000;
+    width: 100%;
+}
+
+.pratoApresentacao a{
+    align-self: center;
+    background-color: #BF7F00;
 }
 
 nav{
@@ -35,8 +66,22 @@ nav{
     justify-content: space-around;
 }
 
-a:hover{
-    color: #BF7F00;
+.pratoApresentacao a:hover{
+    color: #FFFFFF;
+}
+
+.botao, .pratoApresentacao a{
+    display: flex;
+    align-self: center;
+    background-color: #BF7F00;
+    align-content: center;
+    border: none;
+}
+
+footer p, footer il, footer ul{
+    color: #ffffff;
+    background-color: #000;
+
 }
 
 img{
