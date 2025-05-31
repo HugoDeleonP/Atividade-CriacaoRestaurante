@@ -1,23 +1,21 @@
 *{
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
+    list-style: none;
 
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-
     background-color: #ffffff;
     color: #000;
 }
 
-ul, il, a{
-    text-decoration: none;
-    list-style: none;
-}
+
 
 header{
-    padding: 0px 50px;
+    padding: 0px 2.5%;
     margin-bottom: 1%;
 
     background-color: #000;
@@ -37,28 +35,47 @@ header a:hover{
     color: #BF7F00;
 }
 
-.pratoApresentacao{
+#pratosPrincipais{
     margin-left: 1%;
     margin-bottom: 2%;
 
     color: #000;
     background-color: #FFFFFF;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
+    flex-direction: row;
+    align-items: stretch;
+    text-align: justify;
 
-    width: 30%;
+    width: 50%;
+    height: 50%;
+}
+
+#pratosPrincipais img{
+    padding: 3%;
+}
+
+.pratoApresentacao{
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    margin: 10%;
+    border-radius: 10px;
+}
+
+.pratoApresentacao button{
+    margin-top: 5%;
 }
 
 .pratoApresentacao img, .pratoApresentacao a{
     color: #000;
-    width: 100%;
+    align-items: center;
 }
 
 .pratoApresentacao a{
     align-self: center;
-    background-color: #BF7F00;
+    text-align: center;
 }
 
 nav{
@@ -70,12 +87,23 @@ nav{
     color: #FFFFFF;
 }
 
-.botao, .pratoApresentacao a{
+button:hover{
+    background-color: #ffaa00;
+}
+
+button{
     display: flex;
     align-self: center;
-    background-color: #BF7F00;
+    background-color: #fdda93;
     align-content: center;
     border: none;
+    text-align: center;
+    display: inline-block;
+
+    font-size: 150%;
+    border-radius: 9px;
+    height: 110%;
+    width: 120%;
 }
 
 footer p, footer il, footer ul{
@@ -86,4 +114,17 @@ footer p, footer il, footer ul{
 
 img{
     height: 240px;
+}
+
+footer{
+    background-color: #000;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 10%;
+    font-size: 150%;
+    flex-wrap: wrap;
 }
